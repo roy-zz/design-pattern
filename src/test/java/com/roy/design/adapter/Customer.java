@@ -1,7 +1,7 @@
-package com.roy.design.adapter.step2;
+package com.roy.design.adapter;
 
-import com.roy.design.adapter.step2.deliverycompany.CJDeliveryCompany;
-import com.roy.design.adapter.step2.deliverycompany.DeliveryCompany;
+import com.roy.design.adapter.deliverycompany.CJDeliveryCompany;
+import com.roy.design.adapter.deliverycompany.DeliveryCompany;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

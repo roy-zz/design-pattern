@@ -1,4 +1,4 @@
-package com.roy.design.adapter.step2;
+package com.roy.design.adapter;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
