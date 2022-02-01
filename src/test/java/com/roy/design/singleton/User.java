@@ -1,13 +1,10 @@
 package com.roy.design.singleton;
 
 import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
 
 public class User {
-    private static final Logger LOGGER = LoggerFactory.getLogger(User.class);
 
     @Test
     void singletonPatternPractice() throws Exception {

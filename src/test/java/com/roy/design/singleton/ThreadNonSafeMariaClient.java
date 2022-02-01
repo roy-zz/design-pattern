@@ -15,14 +15,6 @@ public final class ThreadNonSafeMariaClient {
         LOGGER.info("Thread Non Safe {} DB 연결", threadNonSafeMariaClient.toString());
     }
 
-    public void insert() {
-        LOGGER.info("Thread Non Safe Insert");
-    }
-
-    public void select() {
-        LOGGER.info("Thread Non Safe Select");
-    }
-
     public static ThreadNonSafeMariaClient getInstance() {
         if (Objects.isNull(THREAD_NON_SAFE_MARIA_CLIENT)) {
             try {

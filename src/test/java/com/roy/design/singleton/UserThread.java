@@ -11,9 +11,14 @@ public class UserThread extends Thread {
     }
     public void run() {
         LOGGER.info("{}", Thread.currentThread().getName());
-        ThreadSafeMariaClient threadSafeMariaClient = ThreadSafeMariaClient.getInstance();
-        LOGGER.info("{}", threadSafeMariaClient.toString());
-//        ThreadNonSafeMariaClient threadNonSafeMariaClient = ThreadNonSafeMariaClient.getInstance();
-//        LOGGER.info("{}", threadNonSafeMariaClient.toString());
+        InitializedMariaClient initializedMariaClient = InitializedMariaClient.getInstance();
+        LOGGER.info("{}", initializedMariaClient.toString());
     }
 }
+
+
+//LOGGER.info("{}", Thread.currentThread().getName());
+//ThreadSafeMariaClient threadSafeMariaClient = ThreadSafeMariaClient.getInstance();
+//LOGGER.info("{}", threadSafeMariaClient.toString());
+//ThreadNonSafeMariaClient threadNonSafeMariaClient = ThreadNonSafeMariaClient.getInstance();
+//LOGGER.info("{}", threadNonSafeMariaClient.toString());

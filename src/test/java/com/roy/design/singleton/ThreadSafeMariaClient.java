@@ -17,22 +17,10 @@ public final class ThreadSafeMariaClient {
         }
     }
 
-    public void insert() {
-        synchronized (this) {
-            LOGGER.info("Thread Safe Select");
-        }
-    }
-
-    public void select() {
-        synchronized (this) {
-            LOGGER.info("Thread Safe Select");
-        }
-    }
-
     public synchronized static ThreadSafeMariaClient getInstance() {
         if (Objects.isNull(THREAD_SAFE_MARIA_CLIENT)) {
             try {
-                Thread.sleep(10);
+                Thread.sleep(100);
                 LOGGER.info("Thread Safe Client 생성");
                 THREAD_SAFE_MARIA_CLIENT = new ThreadSafeMariaClient();
                 connect(THREAD_SAFE_MARIA_CLIENT);
