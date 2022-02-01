@@ -13,9 +13,12 @@ public class DefaultDBClientFactory extends DBClientFactory {
     @Override
     protected DBClient createDBClient(DatabaseType databaseType) {
         switch (databaseType) {
-            case Maria: return new MariaClient();
-            case Redis: return new RedisClient();
-            default: return null;
+            case Maria:
+                return new MariaClient();
+            case Redis:
+                return new RedisClient();
+            default:
+                return null;
         }
     }
 

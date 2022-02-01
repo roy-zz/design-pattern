@@ -3,7 +3,7 @@ package com.roy.design.factorymethod.dbclient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class RedisClient extends DBClient {
+public class RedisClient implements DBClient {
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     @Override
