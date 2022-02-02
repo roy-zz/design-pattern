@@ -14,4 +14,5 @@ public class Vegetable extends Topping {
     public int cost() {
         return sandwich.cost() + COST;
     }
+
 }
