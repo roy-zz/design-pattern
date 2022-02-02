@@ -2,7 +2,7 @@ package com.roy.design.composite;
 
 public abstract class Component {
 
-    private String name;
+    private final String name;
 
     public Component(String name) {
         this.name = name;
@@ -12,7 +12,4 @@ public abstract class Component {
         return this.name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 }

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Package extends Component {
+
     public Package(String name) {
         super(name);
     }
