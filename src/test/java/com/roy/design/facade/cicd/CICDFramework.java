@@ -8,7 +8,8 @@ public class CICDFramework {
     private final DockerClient dockerClient;
     private final Deployer deployer;
 
-    public CICDFramework(GitClient gitClient, JarBuilder jarBuilder, DockerClient dockerClient, Deployer deployer) {
+    public CICDFramework(GitClient gitClient, JarBuilder jarBuilder,
+                         DockerClient dockerClient, Deployer deployer) {
         this.gitClient = gitClient;
         this.jarBuilder = jarBuilder;
         this.dockerClient = dockerClient;
@@ -36,4 +37,5 @@ public class CICDFramework {
             deployer.deploy();
         }
     }
+
 }
