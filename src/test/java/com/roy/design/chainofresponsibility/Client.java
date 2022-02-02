@@ -30,6 +30,6 @@ public class Client {
         };
 
         Arrays.asList(queries).forEach(readOnlyMariaDB::process);
-
     }
+
 }

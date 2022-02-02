@@ -20,4 +20,5 @@ public class Query {
         this.queryType = queryType;
         this.query = query;
     }
+
 }
