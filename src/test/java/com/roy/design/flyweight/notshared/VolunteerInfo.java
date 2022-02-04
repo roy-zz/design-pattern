@@ -10,4 +10,5 @@ public class VolunteerInfo {
         this.age = age;
         this.address = address;
     }
+
 }

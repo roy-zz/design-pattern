@@ -39,12 +39,15 @@ public class Company {
                 ResumeFactory.getResume(volunteer10, PYTHON)
         };
         logger.info("### JAVA 학교 전화번호 수정 전");
-        Arrays.asList(resumes).forEach(i -> logger.info("학교 명: {}, 학교 번호: {}", i.getUniversityInfo().getName(), i.getUniversityInfo().getNumber()));
+        Arrays.asList(resumes).forEach(i -> logger.info("학교 명: {}, 학교 번호: {}",
+                i.getUniversityInfo().getName(), i.getUniversityInfo().getNumber()));
 
         JavaUniversityInfo javaUniversityInfo = JavaUniversityInfo.getInstance();
         javaUniversityInfo.setNumber("010-9999-8888");
+
         logger.info("### JAVA 학교 전화번호 수정 후");
-        Arrays.asList(resumes).forEach(i -> logger.info("학교 명: {}, 학교 번호: {}", i.getUniversityInfo().getName(), i.getUniversityInfo().getNumber()));
+        Arrays.asList(resumes).forEach(i -> logger.info("학교 명: {}, 학교 번호: {}",
+                i.getUniversityInfo().getName(), i.getUniversityInfo().getNumber()));
     }
 
 }

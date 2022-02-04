@@ -15,4 +15,5 @@ public class Resume {
     public UniversityInfo getUniversityInfo() {
         return universityInfo;
     }
+
 }
